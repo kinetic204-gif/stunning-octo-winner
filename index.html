@@ -7,8 +7,9 @@
     <title>Library</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/d8a4ded078.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
-<body>
+<body class="menu--open">
     <section id="landing">
         
         <nav>
@@ -20,6 +21,29 @@
                 <li><a href="#" class="nav__link">Authors</a></li>
                 <li><a href="#" class="nav__link">Contact</a></li>
             </ul>
+            </div>
+
+
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                    <a href="#" class="menu__link">Home</a></li>
+                    <li class="menu__list">
+                    <a href="#features" class="menu__link">Books</a></li>
+                    <li class="menu__list">
+                    <a href="#" class="menu__link">Authors</a></li>
+                    <li class="menu__list">
+                    <a href="#" class="menu__link no-cursor">Contact</a></li>
+
+                </ul>
+
+
             </div>
         </nav>
         <header>
@@ -180,7 +204,7 @@
                         </h2>
                         <div class="books">
                         <div class="book">
-                            <figure class="latest__img--wrapper">
+                            <figure class="book__img--wrapper">
                                 <img class="book__img" src="./assets/book-1.jpeg" alt="">
                             </figure>
                             <div class="book__title">
@@ -198,7 +222,7 @@
                 </div>
 
                 <div class="book">
-                            <figure class="latest__img--wrapper">
+                            <figure class="book__img--wrapper">
                                 <img class="book__img" src="./assets/book-2.jpeg" alt="">
                             </figure>
                             <div class="book__title">
@@ -216,7 +240,7 @@
                 </div>
 
                 <div class="book">
-                            <figure class="latest__img--wrapper">
+                            <figure class="book__img--wrapper">
                                 <img class="book__img" src="./assets/book-3.jpeg" alt="">
                             </figure>
                             <div class="book__title">
@@ -234,7 +258,7 @@
                 </div>
 
                 <div class="book">
-                            <figure class="latest__img--wrapper">
+                            <figure class="book__img--wrapper">
                                 <img class="book__img" src="./assets/book-4.jpeg" alt="">
                             </figure>
                             <div class="book__title">
@@ -250,8 +274,8 @@
                     <div class="book__price">
                         <span class="book__price--latest">$59.95</span>                    </div>
                 </div>
-<div class="book">
-                            <figure class="latest__img--wrapper">
+                        <div class="book">
+                            <figure class="book__img--wrapper">
                                 <img class="book__img" src="./assets/book-5.jpeg" alt="">
                             </figure>
                             <div class="book__title">
@@ -269,7 +293,7 @@
                 </div>
 
                 <div class="book">
-                            <figure class="latest__img--wrapper">
+                            <figure class="book__img--wrapper">
                                 <img class="book__img" src="./assets/book-6.jpeg" alt="">
                             </figure>
                             <div class="book__title">
@@ -287,7 +311,7 @@
                 </div>
 
                 <div class="book">
-                            <figure class="latest__img--wrapper">
+                            <figure class="book__img--wrapper">
                                 <img class="book__img" src="./assets/book-7.jpg" alt="">
                             </figure>
                             <div class="book__title">
@@ -305,7 +329,7 @@
                 </div>
 
                 <div class="book">
-                            <figure class="latest__img--wrapper">
+                            <figure class="book__img--wrapper">
                                 <img class="book__img" src="./assets/book-8.jpeg" alt="">
                             </figure>
                             <div class="book__title">
@@ -321,20 +345,38 @@
                     <div class="book__price">
                         <span class="book__price--latest">$59.95</span>                    </div>
                 </div>
-
-
-
-
-
-               <!-- <section id="recent">
-            <div class="container">
-                <div class="row">
-
+            </section>
+            <section id="explore">
+                <div class="container">
+                    <div class="row row__column">
+                        <h2>Explore more <span class="purple">Books</span></h2>
+                        <a href="#features">
+                           <button class="btn">See All Books</button> 
+                            </a>
+                        
+                    </div>
                 </div>
-                </div>
-                </section> -->
-
+            </section>
     </main>
+
+    <footer>
+                <div class="footer__container">
+                <div class="row row__column">
+                    <a href="#">"
+                    <figure class="footer__logo">
+                        <img class="footer__logo" src="./assets/Library.svg" alt="Library Logo">
+                    </figure>
+                    </a>
+                <div class="footer__list">
+                    <a href="" class="footer__link">Home</a>
+                    <a href="" class="footer__link no-cursor">About</a>
+                    <a href="" class="footer__link">Books</a>
+                    <a href="" class="footer__link no-cursor">Contact</a>
+            </div>
+                <div class="footer__text">Copyright © 2025 Library. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
