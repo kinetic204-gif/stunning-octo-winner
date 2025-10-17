@@ -1,9 +1,9 @@
+console.log( "it works")
+
 function openMenu() {
-  document.body.classList += " menu--open";
-}
+    document.body.classList.toggle("menu--open");
+} 
 
 function closeMenu() {
-  document.body.classList.remove('menu--open');
+    document.body.classList.remove("menu--open");
 }
-
-console.log( "it works")
