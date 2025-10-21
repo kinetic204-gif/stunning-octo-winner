@@ -280,6 +280,7 @@ button:active {
 
 .highlight__wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .highlight {
@@ -288,7 +289,6 @@ button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .highlight__para {
@@ -310,8 +310,9 @@ button:active {
 }
 
 .highlight__subtitle {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 16px;
+  text-align:center;
 }
 
 /* FEATURES */
@@ -349,7 +350,7 @@ button:active {
 }
 
 .book__title {
-  font-size: 20px;
+  font-size: 16px;
   margin: 8px;
 }
 
@@ -361,6 +362,7 @@ button:active {
 .book__ratings {
   margin-bottom: 8px;
   color: #fabf2a;
+  font-size: 8px;
 }
 
 .book__price--normal {
@@ -371,7 +373,7 @@ button:active {
 }
 
 .book__price--latest {
-  font-size: 16px;
+  font-size: 8px;
   font-weight: bold;
   color: #0c0913;
   padding: 8px 0;
@@ -432,6 +434,14 @@ footer {
   h3 {
     font-size: 12px;
   }
+
+  Button {
+    font-size: 18px;
+  }
+
+  .book {
+    width: 50%;
+  }
 }
 
 /* SMALL PHONES,  LARGE SMARTPHONES */
@@ -444,3 +454,13 @@ footer {
 .btn__menu {
   display: block;
 }
+
+.highlight {
+  width: 100%;
+}
+
+.highlight:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+/* EXTRA SMALL PHONES */
